@@ -1,0 +1,75 @@
+@import "./_variables";
+@import "./issues";
+
+body {
+  font-family: "Work Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 10vh;
+}
+
+.container {
+  background-color: colors(btn-text);
+  border-radius: 0.2rem;
+
+  & h4 {
+    color: colors(main);
+    font-size: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+.form-details {
+  box-shadow: 0px 0px 36px -4px rgba(180, 200, 250, 1);
+  border-radius: 0.2rem;
+  background-color: lighten(colors(accent), 10);
+  padding: 1rem;
+  margin: 0 1rem;
+
+  &__h1 {
+    font-size: 1rem;
+    color: colors(main);
+  }
+}
+.form {
+  box-sizing: border-box;
+  margin-top: 1rem;
+
+  & [type="text"],
+  select {
+    width: 100%;
+    padding: 1.2rem;
+    margin: 0.8rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  select {
+    width: 100%;
+    padding: 2rem;
+    margin: 0.8rem 0;
+    outline: none;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+}
+.label {
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+button.section-btn {
+  margin-top: 1rem;
+  background-color: #4677af;
+  color: colors(btn-text);
+  border-radius: 0.2rem;
+  width: 4rem;
+  font-size: 1rem;
+  height: 2.5rem;
+}

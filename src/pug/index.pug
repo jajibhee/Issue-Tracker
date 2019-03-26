@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="assets/css/app.css")
+    title Issue-Tracker
+  body
+    .container
+      h4 THE ISSUE TRACKER
+      
+      section.form-details
+        h1.section__h1 Add New Issue
+        form(action="", method="").form
+          div.label Description
+          input(type="text" placeholder="Describe the issue")
+        form(action="", method="").form
+          div.label Severity
+          select.select
+            option(value="Low") Low
+            option(value="High") High
+        form(action="", method="").form
+          div.label Assigned To
+          input(type="text" placeholder="Enter responsibility ...")
+        button.section-btn Add
+      
+      section.issue-details
+        p Issue ID:a769687c
+        button.open-btn Open
+
+        .details
+        h1 Delete function not workingin details view
+
+        .profile-details
+          .sm-user
+            img(src="assets/img/clock.svg", alt="clock")
+            p Medium
+            img(src="assets/img/profile-icon.svg", alt="profile-icon")
+            p Sebastian
+          
+        .buttons
+          button.close Close
+          button.delete Delete
+
+
+          
+
+        

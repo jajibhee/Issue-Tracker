@@ -11,10 +11,11 @@ html(lang="en")
       h4 THE ISSUE TRACKER
       
       section.form-details
+        div.alert Your complaint has been sent!
         h1.section__h1 Add New Issue
         form(action="", method="").form
           div.label Description
-          input(type="text" placeholder="Describe the issue")
+          input(id="issue" type="text" placeholder="Describe the issue")
         form(action="", method="").form
           div.label Severity
           select.select
@@ -22,8 +23,8 @@ html(lang="en")
             option(value="High") High
         form(action="", method="").form
           div.label Assigned To
-          input(type="text" placeholder="Enter responsibility ...")
-        button.section-btn Add
+          input(id="agent" type="text" placeholder="Enter responsibility ...")
+        button.section-btn#add-btn Add
       
       section.issue-details
         p Issue ID:a769687c
@@ -42,7 +43,9 @@ html(lang="en")
         .buttons
           button.close Close
           button.delete Delete
-
+    script(scr="https://www.gstatic.com/firebasejs/5.9.1/firebase.js") 
+    script(src="assets/js/app.js")
+    
 
           
 

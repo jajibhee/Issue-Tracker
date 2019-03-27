@@ -11,10 +11,11 @@
     <div class="container">
       <h4>THE ISSUE TRACKER</h4>
       <section class="form-details">
+        <div class="alert">Your complaint has been sent!</div>
         <h1 class="section__h1">Add New Issue</h1>
         <form class="form" action="" method="">
           <div class="label">Description</div>
-          <input type="text" placeholder="Describe the issue"/>
+          <input id="issue" type="text" placeholder="Describe the issue"/>
         </form>
         <form class="form" action="" method="">
           <div class="label">Severity</div>
@@ -25,9 +26,9 @@
         </form>
         <form class="form" action="" method="">
           <div class="label">Assigned To</div>
-          <input type="text" placeholder="Enter responsibility ..."/>
+          <input id="agent" type="text" placeholder="Enter responsibility ..."/>
         </form>
-        <button class="section-btn">Add</button>
+        <button class="section-btn" id="add-btn">Add</button>
       </section>
       <section class="issue-details">
         <p>Issue ID:a769687c</p>
@@ -46,5 +47,7 @@
         </div>
       </section>
     </div>
+    <script scr="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"> </script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

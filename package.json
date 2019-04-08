@@ -4,7 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "firebase": "^5.9.1"
+    "firebase": "^5.9.1",
+    "gh-pages": "^2.0.1"
   },
   "scripts": {
     "setup": "make setup && make generate-foundation-settings",

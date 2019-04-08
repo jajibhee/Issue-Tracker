@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
+  "homepage": "https://jajibhee.github.io/Issue-Tracker/",
   "dependencies": {
     "firebase": "^5.9.1",
     "gh-pages": "^2.0.1"
   },
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "setup": "make setup && make generate-foundation-settings",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "make start"
